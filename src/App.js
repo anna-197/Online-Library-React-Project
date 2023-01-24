@@ -6,6 +6,8 @@ import BooksList from './components/BooksList';
 
 function App() {
 
+  
+
   const [books, setBooks] = useState([        {
     "Title": "Fantastic Beasts and Where to Find Them: The Original Screenplaye",
     "Year": "2016",
@@ -26,10 +28,12 @@ function App() {
 }]);
 
 
+
   return (
     <div className="App">
       <Header/>
       <BooksList books={books} />
+      <button className="btn" onClick={setBooks}> Click </button>
     </div>
   );
 }
