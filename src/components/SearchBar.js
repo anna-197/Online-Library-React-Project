@@ -50,7 +50,9 @@ const SearchBar = () => {
         {result.map(each_book=>(
           <>
             <div className="each-book-result">
+            <a href={each_book.volumeInfo.previewLink}>
             <img src={each_book.volumeInfo.imageLinks && each_book.volumeInfo.imageLinks.smallThumbnail} alt="anything"/>
+            </a>
             </div>
           </>
         ))}
