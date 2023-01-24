@@ -9,8 +9,9 @@ function Header() {
         <a href='/'>
         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDcSGDOS0hkk5shiEcujGF_I7umVEjZ54NPw&usqp=CAU' alt='logo'></img>
         </a>
+        <h1>Welcome to Virtual Library</h1>
         <ul className='nav-items'>
-          <li>Home</li>
+          <li><a href='/'>Home</a></li>
           <li>Reading List</li>
           <li>Contact Us</li>
         </ul>

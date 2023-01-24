@@ -19,7 +19,7 @@ const SearchBar = () => {
         event.preventDefault();
         //  console.log(book);
         Axios.get(
-          "https://www.googleapis.com/books/v1/volumes?q="+book+"&key=AIzaSyCHYcFQLjiWJJpOxQyChKd9XRNh0wjgJ3w&maxResults=40"
+          "https://www.googleapis.com/books/v1/volumes?q="+book+"&key=AIzaSyCHYcFQLjiWJJpOxQyChKd9XRNh0wjgJ3w&maxResults=20"
         ).then((response) => {
           console.log(response);
           setResult(response.data.items);
@@ -48,7 +48,11 @@ const SearchBar = () => {
       </div>
       <div className="result-container">
         {result.map(each_book=>(
-          <img src={each_book.volumeInfo.imageLinks && each_book.volumeInfo.imageLinks.smallThumbnail} alt="anything"/>
+          <>
+            <div className="each-book-result">
+            <img src={each_book.volumeInfo.imageLinks && each_book.volumeInfo.imageLinks.smallThumbnail} alt="anything"/>
+            </div>
+          </>
         ))}
       </div>
     </>
