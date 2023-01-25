@@ -1,21 +1,21 @@
-*{
+* {
   overflow: hidden;
 }
 
-.body{
+.body {
 
   background: url(https://wallpaperaccess.com/full/2862101.jpg
-  ) no-repeat center center/cover ;
-      height: 100vh;
-      top:0px;
-      left:0px;
-      width: 100%;
-      position: relative;
+) no-repeat center center/cover;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  position: relative;
 
 
 }
 
-body::after{
+body::after {
   content: '';
   position: absolute;
   top: 0;
@@ -23,43 +23,43 @@ body::after{
   height: 100%;
   width: 100%;
   z-index: 1;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
   color: white;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
-  position:absolute;
-z-index: 2;
-width: 100vw;
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
 }
 
-.header a{
+.header a {
   text-decoration: none;
   color: white;
 }
 
-.header img{
+.header img {
   height: 62px;
   padding: 2px;
 }
 
-.header h1{
+.header h1 {
   padding-left: 164px;
 }
 
-.nav-items{
+.nav-items {
   display: flex;
   list-style: none;
-  
+
 }
 
-.nav-items li{
+.nav-items li {
   padding: 10px;
 }
 
@@ -70,8 +70,8 @@ width: 100vw;
   position: absolute;
   top: 123px;
   display: flex;
-  
-z-index: 2;
+  left: 570px;
+  z-index: 2;
 }
 
 .searchTerm {
@@ -100,23 +100,36 @@ z-index: 2;
   font-size: 20px;
 }
 
-.result-container{
+.result-container {
   position: absolute;
   top: 170px;
+  left: 130px;
   width: 99%;
-  height: 63%;
+  height: 73%;
   margin: 10px;
   display: flex;
   flex-wrap: wrap;
   overflow-y: auto;
-  position:absolute;
-z-index: 2;
+  position: absolute;
+  z-index: 2;
 }
 
-.each-book-result{
-  margin: 10px;
+.card {
+  border: 1px solid white;
+  margin: 5px;
   align-items: center;
-  height: 200px;
-  width: 135px;
-  
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.card-title {
+  color: white;
+}
+
+.read-more {
+  color: white;
+  text-decoration: none;
 }
