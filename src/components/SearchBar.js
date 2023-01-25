@@ -31,7 +31,7 @@ const SearchBar = () => {
             <input
               type="text"
               className="searchTerm"
-              placeholder="What book do you want to read?"
+              placeholder="Which book do you want to read?"
               onChange={handleChange}
             />
             <button type="submit" class="searchButton" onClick={handleCLick}>
