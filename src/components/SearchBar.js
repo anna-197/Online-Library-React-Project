@@ -73,6 +73,7 @@ const SearchBar = () => {
                 <a
                   href={each_book.volumeInfo.previewLink}
                   className="read-more"
+                  target="_blank" rel="noreferrer"
                 >
                   Read More
                 </a>
