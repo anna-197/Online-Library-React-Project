@@ -23,6 +23,19 @@ const SearchBar = () => {
     });
   }
 
+  function handleKeyDown(event){
+    if (event.key === 'Enter') {
+      Axios.get(
+        "https://www.googleapis.com/books/v1/volumes?q=" +
+          book +
+          "&key=AIzaSyCHYcFQLjiWJJpOxQyChKd9XRNh0wjgJ3w&maxResults=40"
+      ).then((response) => {
+        console.log(response);
+        setResult(response.data.items);
+      });
+    }
+  }
+
   return (
     <>
       <div className="SearchBar">
@@ -33,6 +46,7 @@ const SearchBar = () => {
               className="searchTerm"
               placeholder="Which book do you want to read?"
               onChange={handleChange}
+              onKeyDown={handleKeyDown}
             />
             <button type="submit" class="searchButton" onClick={handleCLick}>
               Search
