@@ -27,10 +27,16 @@ const addToFavourites = (each_book) => {
          console.log(favourites)
 }
 
+const removeFromFavourites =(id)=>{
+    const oldFavourites = [...favourites];
 
+    const newFavourites = oldFavourites.filter((each_book)=>each_book.id !== id);
+
+     setFavourites(newFavourites);
+}
 
     return(
-            <AppContext.Provider value={{favourites, addToFavourites}}>
+            <AppContext.Provider value={{favourites, addToFavourites, removeFromFavourites}}>
                 {children}
             </AppContext.Provider>
     )

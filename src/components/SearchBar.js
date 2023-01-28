@@ -8,19 +8,16 @@ const SearchBar = () => {
   const [result, setResult] = useState([]);
   // const[favourites, setFavourites] = useState([]);
 
-  const{favourites, addToFavourites} = useAppContext();
+  const{favourites, addToFavourites, removeFromFavourites} = useAppContext();
 
   console.log('favourites are', favourites)
 
-  // const addToFavourites = (each_book) => {
-  //   const oldFavourites = [...favourites];
+  const favouritesChecker = (id) =>{
+    const boolean  = favourites.some((each_book)=> each_book.id === id)
+    return boolean;
+    }
 
-  //   const newFavourites = oldFavourites.concat(each_book);
 
-  //   setFavourites(newFavourites);
-
-  //     console.log(favourites)
-  // };
 
   function handleChange(event) {
     const book = event.target.value;
@@ -80,7 +77,12 @@ const SearchBar = () => {
                   Read More
                 </a>
                 <br></br>
-                <button className="add-btn" onClick={()=>addToFavourites(each_book)}> Add to Reading List </button>
+                {favouritesChecker(each_book.id) ? 
+                <button className="add-btn" onClick={()=>removeFromFavourites(each_book.id)}> Remove from Reading List </button>
+                : (
+                  <button className="add-btn" onClick={()=>addToFavourites(each_book)}> Add to Reading List </button>
+                ) }
+                
               </div>
             </div>
           </>
