@@ -79,7 +79,8 @@ const SearchBar = () => {
                 >
                   Read More
                 </a>
-                <button onClick={()=>addToFavourites(each_book)}> Fav </button>
+                <br></br>
+                <button className="add-btn" onClick={()=>addToFavourites(each_book)}> Add to Reading List </button>
               </div>
             </div>
           </>
@@ -127,7 +128,8 @@ const SearchBar = () => {
                 >
                   Read More
                 </a>
-                <button onClick={()=>addToFavourites(each_book)}> Fav </button>
+                <br></br>
+                <button className="add-btn" onClick={()=>addToFavourites(each_book)}> Add to Reading List </button>
               </div>
             </div>
           </>

@@ -163,3 +163,8 @@ left: 214px;
   color: white;
   text-decoration: none;
 }
+
+.add-btn{
+  margin: 2px;
+  padding: 2px;
+}
