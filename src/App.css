@@ -51,6 +51,7 @@ body::after {
 
 .header h1 {
   padding-left: 44px;
+  color: white;
 }
 
 .nav-items {
@@ -65,12 +66,20 @@ body::after {
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+.ReadingList-title{
+  color:white;
+  position: absolute;
+  top: 107px;
+left: 214px;
+  z-index: 2;
+}
+
 .search {
-  width: 21%;
+  width: 41%;
   position: absolute;
   top: 123px;
   display: flex;
-  left: 570px;
+  left: 675px;
   z-index: 2;
 }
 
@@ -92,7 +101,7 @@ body::after {
   width: 90px;
   height: 34px;
   border: 1px solid #161818;
-  background: #9a7f04fa;
+  background:white;
   text-align: center;
   color: rgb(58, 46, 46);
   border-radius: 0 5px 5px 0;
@@ -100,18 +109,39 @@ body::after {
   font-size: 20px;
 }
 
-.result-container {
+.ReadingList-container{
   position: absolute;
   top: 170px;
-  left: 130px;
-  width: 99%;
+  left: 10px;
+  width: 35%;
+  height: 73%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 2;
+  border: 1px solid white;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.result-container {
+  position: absolute;
+  top: 160px;
+  left: 549px;
+  width: 62%;
   height: 73%;
   margin: 10px;
   display: flex;
   flex-wrap: wrap;
   overflow-y: auto;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
+  border: 1px solid white;
 }
 
 .card {

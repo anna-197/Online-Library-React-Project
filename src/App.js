@@ -4,12 +4,14 @@ import './App.css';
 import Header from './components/Header';
 import SearchBar from './components/SearchBar';
 
+
 function App() {
 
   return(
     <>
       <div className='body'>
       <Header/>
+      <h2 className='ReadingList-title'>Reading List</h2>
       <SearchBar/>
       </div>
     </>
