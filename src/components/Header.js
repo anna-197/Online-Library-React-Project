@@ -17,7 +17,7 @@ function Header() {
           <li>
             <a href="/">Home</a>
           </li>
-          <li>Reading List</li>
+          
         </ul>
       </div>
     </>

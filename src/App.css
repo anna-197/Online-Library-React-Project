@@ -52,6 +52,7 @@ body::after {
 .header h1 {
   padding-left: 44px;
   color: white;
+  font-size: 30px;
 }
 
 .nav-items {

@@ -1,6 +1,6 @@
 # _Online Library_
 
-#### By _{anna-197}_
+#### By _anna-197_
 
 #### _{This project is a simple implementation of an Online Book Search feature using Google Books API.}_
 
@@ -17,7 +17,9 @@
 This allows users to 
 
 * Search for Books.
-* Click on the results to read further details about it.
+* Click on the results to read further details about the book.
+* Add Books to Reading List.
+* Remove Books from Reading List.
 
 
 ## Setup/Installation Requirements
@@ -36,4 +38,4 @@ You may also see any lint errors in the console.
 
 ## Link for the Project
 
-* https://online-library-project.netlify.app/
+* https://online-library-react-project.netlify.app/
